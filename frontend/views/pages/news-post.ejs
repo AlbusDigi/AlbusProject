@@ -1,0 +1,116 @@
+<%- include ('../partiel/header') %>
+
+			<!-- Begin bread crumbs -->
+			<nav class="bread-crumbs">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<ul class="bread-crumbs-list">
+								<li><a href="index.html">Home</a><i class="material-icons md-18">chevron_right</i></li>
+								<li><a href="news.html">News</a><i class="material-icons md-18">chevron_right</i></li>
+								<li>Benefits Of ASync/Await In Programming</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav><!-- End bread crumbs -->
+
+            <div class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="event-post">
+                                <header class="event-post-header">
+                                    <h1 class="event-post-title">Formation en Programmation Asynchrone</h1>
+                                    <div class="event-post-meta">
+                                        <div class="event-post-meta-item">
+                                            <i class="material-icons md-22">access_time</i>
+                                            <span>Sept 20, 2024</span>
+                                        </div>
+                                        <div class="event-post-meta-item">
+                                            <span>par &nbsp;</span>
+                                            <a href="#!">Jane Smith</a>
+                                        </div>
+                                        <div class="event-post-meta-item">
+                                            <i class="material-icons md-20">people</i>
+                                            <span>Nombre de places : 25</span>
+                                        </div>
+                                    </div>
+                                    <div class="event-post-img item-bordered item-border-radius">
+                                        <img data-src="img/header.jpg" class="img-responsive lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
+                                    </div>
+                                </header>
+                                <article class="event-post-article content">
+                                    <h2>Description Complète</h2>
+                                    <p>Cette formation vous apprendra à utiliser les promesses et l'async/await en JavaScript, facilitant ainsi l'écriture de code asynchrone lisible et maintenable.</p>
+                                    <p>Au cours de cette session, nous aborderons les sujets suivants :</p>
+                                    <ul>
+                                        <li>Introduction à la programmation asynchrone</li>
+                                        <li>Travail avec des promesses</li>
+                                        <li>Utilisation de async/await</li>
+                                        <li>Gestion des erreurs</li>
+                                    </ul>
+                                    <h3>Code de la Formation</h3>
+                                    <p><strong>CODE12345</strong></p>
+                                    <h3>Objectifs de la Formation</h3>
+                                    <ol>
+                                        <li>Comprendre les concepts de base de l'asynchrone</li>
+                                        <li>Apprendre à écrire un code efficace avec async/await</li>
+                                        <li>Développer des compétences pratiques à travers des exercices</li>
+                                    </ol>
+                                </article>
+                                <footer class="event-post-footer">
+                                    <div class="row align-items-center justify-content-between items">
+                                        <div class="col-md col-12 item">
+                                            <ul class="event-post-cat">
+                                                <li><a href="#!">Développement Web</a></li>
+                                                <li><a href="#!">JavaScript</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-auto col-12 item">
+                                            <a href="/booking" class="btn btn-primary btn-reserve">Réserver ma place</a>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <script>
+                function reservePlace() {
+                    alert("Votre place a été réservée avec succès !");
+                }
+            </script>
+            
+            <style>
+                .event-post {
+                    border: 1px solid #ddd;
+                    border-radius: 8px;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                }
+                .event-post-title {
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                }
+                .btn-reserve {
+                    background-color: #007bff;
+                    color: white;
+                    border: none;
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+                .btn-reserve:hover {
+                    background-color: #0056b3;
+                }
+                @media (max-width: 768px) {
+                    .event-post-title {
+                        font-size: 20px;
+                    }
+                }
+            </style>
+
+		<%- include ('../partiel/footer') %>

@@ -1,0 +1,141 @@
+<%- include ('../partiel/header') %>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-heading h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+
+        .section-desc {
+            font-size: 1.2rem;
+            color: #6c757d;
+        }
+
+        .card {
+            margin-bottom: 30px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img-top {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            height: 200px; /* Hauteur fixe pour un format carré */
+            width: 100%; /* Largeur à 100% */
+            object-fit: cover; /* S'assure que l'image couvre le conteneur */
+        }
+
+        .btn-custom {
+            background-color: #007bff; /* Couleur personnalisée */
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <nav class="bread-crumbs">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="bread-crumbs-list">
+                        <li>
+                            <a href="/">Home</a>
+                            <i class="material-icons md-18">chevron_right</i>
+                        </li>
+                        <li>Formations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav><!-- End bread crumbs -->
+    <!-- Formations Section -->
+    <div class="section">
+        <div class="container">
+            <header class="col-12">
+                <div class="section-heading text-center">
+                    <h1>Nos Formations</h1>
+                    <p class=" text-center">Découvrez nos formations et réservez votre place.</p>
+                </div>
+            </header>
+
+            <div class="row">
+
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/200.png" class="card-img-top" alt="Développement Web">
+                        <div class="card-body">
+                            <h5 class="card-title">Formation en Développement Web</h5>
+                            <p class="card-text">Apprenez à créer des sites web modernes avec HTML, CSS et JavaScript.</p>
+                            <a href="/article" class="btn btn-custom">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/200.png" class="card-img-top" alt="Marketing Digital">
+                        <div class="card-body">
+                            <h5 class="card-title">Formation en Marketing Digital</h5>
+                            <p class="card-text">Maîtrisez les techniques de marketing en ligne et boostez votre visibilité.</p>
+                            <a href="/booking" class="btn btn-custom">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/200.png" class="card-img-top" alt="Gestion de Projet">
+                        <div class="card-body">
+                            <h5 class="card-title">Formation en Gestion de Projet</h5>
+                            <p class="card-text">Apprenez à gérer efficacement vos projets avec les meilleures pratiques.</p>
+                            <a href="/booking" class="btn btn-custom">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <%- include ('../partiel/footer') %>

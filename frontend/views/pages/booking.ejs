@@ -1,0 +1,179 @@
+<%- include ('../partiel/header') %>
+
+    <style>
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+       
+        .header a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero-section {
+            background: url('assets/img/hero-bg.jpg') no-repeat center center/cover;
+            padding: 60px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-heading h2 {
+            font-size: 2rem;
+            color: #343a40;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+       
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        .footer-links a {
+            color: #fff;
+        }
+    </style>
+    <nav class="bread-crumbs">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="bread-crumbs-list">
+                        <li>
+                            <a href="/">Home</a>
+                            <i class="material-icons md-18">chevron_right</i>
+                        </li>
+                        <li>Reserver</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav><!-- End bread crumbs -->
+
+    
+    <div class="section">
+        <div class="container">
+            <header class="col-12">
+                <div class="section-heading heading-center">
+                    <h2>Remplissez le Formulaire</h2>
+                    <p class="section-subheading">Tous les champs marqués d'un * sont obligatoires.</p>
+                </div>
+            </header>
+            <div class="col-lg-8 offset-lg-2">
+                <div class="card p-4">
+                    <form>
+                        <div class="form-group">
+                            <label for="civilite">Civilité</label>
+                            <select class="form-control" id="civilite" required>
+                                <option value="" disabled selected>Choisir...</option>
+                                <option value="mr">Monsieur</option>
+                                <option value="mme">Madame</option>
+                                <option value="mlle">Mademoiselle</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="prenom">Prénom *</label>
+                                <input type="text" class="form-control" id="prenom" placeholder="Entrez votre prénom" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="nom">Nom *</label>
+                                <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom de famille" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail (obligatoire) *</label>
+                            <input type="email" class="form-control" id="email" placeholder="Entrez votre adresse email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">Téléphone (obligatoire) *</label>
+                            <input type="tel" class="form-control" id="telephone" placeholder="Numéro de téléphone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="trancheAge">Tranche d’âge *</label>
+                            <select class="form-control" id="trancheAge" required>
+                                <option value="" disabled selected>Choisir...</option>
+                                <option value="moins_de_18">Moins de 18 ans</option>
+                                <option value="18_25">18 à 25 ans</option>
+                                <option value="26_35">26 à 35 ans</option>
+                                <option value="36_50">36 à 50 ans</option>
+                                <option value="plus_de_50">Plus de 50 ans</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="statut">Statut *</label>
+                            <select class="form-control" id="statut" required>
+                                <option value="" disabled selected>Choisir...</option>
+                                <option value="etudiant">Étudiant</option>
+                                <option value="salarié">Salarié</option>
+                                <option value="independant">Indépendant</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="specialite">Spécialité ou domaine (étude ou profession) *</label>
+                            <input type="text" class="form-control" id="specialite" placeholder="Entrez votre spécialité" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="etablissement">Nom de l'Etablissement / Université *</label>
+                            <input type="text" class="form-control" id="etablissement" placeholder="Entrez le nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="source">Comment avez-vous eu connaissance de cet événement ? *</label>
+                            <select class="form-control" id="source" required>
+                                <option value="" disabled selected>Choisir...</option>
+                                <option value="internet">Internet</option>
+                                <option value="ami">Ami</option>
+                                <option value="reseaux_sociaux">Réseaux sociaux</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Soumettre</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include ('../partiel/footer') %>
